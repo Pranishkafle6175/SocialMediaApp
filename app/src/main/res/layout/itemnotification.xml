@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notificationuserimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_person"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/notificationtext"
+        android:layout_marginTop="20dp"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/notificationpostimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

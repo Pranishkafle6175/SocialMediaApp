@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/instagramletter"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground"
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground"
+        android:hint="Password"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Login"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Have Account? Register"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

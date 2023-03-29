@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotificationFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/notificationappbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?android:attr/windowBackground"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notificationtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notificationfragmentinstagramletter"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/instagramletter"/>
+
+                <TextView
+
+                    android:layout_width="164dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/notification"
+                    android:text="Notifications"
+                    android:textSize="22dp"
+                    android:textStyle="italic"
+                    android:textColor="#CF0F0F"/>
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="38dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:src="@drawable/ic_notification" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificationrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notificationappbarlayout"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

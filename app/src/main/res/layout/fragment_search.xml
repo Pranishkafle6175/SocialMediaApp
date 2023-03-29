@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/searchappbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowBackground"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?android:attr/windowBackground"
+            >
+
+            <EditText
+                android:id="@+id/searchedittext"
+                android:layout_width="300dp"
+                android:layout_height="27dp"
+                android:background="@drawable/buttonbackground"
+                android:layout_marginStart="30dp"  />
+
+            <ImageView
+                android:id="@+id/searchimage"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="53dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_below="@+id/searchappbarlayout"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="110dp"
+        android:text="AVAILABLE USER"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/firstrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchappbarlayout"
+        android:layout_marginTop="83dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

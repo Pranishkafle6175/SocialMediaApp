@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageSetupActivity"
+    android:background="@drawable/backgroung"
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="385dp"
+        android:layout_height="255dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-25dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/imageanimation" />
+
+    <TextView
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/setupimage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="429dp"
+        android:layout_marginEnd="-64dp"
+        android:paddingLeft="30dp"
+        android:text="Set UP Your Profile"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setupimage"
+        android:layout_width="196dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="113dp"
+        android:src="@drawable/ic_person" />
+
+
+</RelativeLayout>
